@@ -1,0 +1,64 @@
+body{
+    color: black;
+     border: 3px solid gray;
+     width: 400px;
+     height: 260px;  
+}
+h2{
+    color: black; 
+}
+button{
+    height: 50px;
+    width: 100px;
+    font-weight: normal ;
+}
+#principal{
+    /*border: 3px solid red;*/
+    width: 400px;                
+}
+#primeiro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#segundo{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+#terceiro{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+#btngerar{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 16px ;
+    cursor: pointer;
+    font-weight: bold;
+}
+#btnlimpar{
+    background-color: red;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
+    font-size: 16px ;
+    cursor: pointer;
+    font-weight: bold;
+}
+#btncopiar{
+    height: 30px;
+    width: 60px;
+    font-weight: normal;
+    text-align: center;
+    position:relative;
+    left: 15px;
+    cursor: pointer;
+}
