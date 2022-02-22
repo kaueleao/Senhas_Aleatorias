@@ -16,6 +16,22 @@ function gerar(){
     }
 }
 
+/* Função copiar a senha gerada. Usado a API Clipboard 
+Link referência usado: https://www.delftstack.com/pt/howto/javascript/javascript-copy-to-clipboard/ */
+function copiar(){
+    
+    var conteudoCopia = document.getElementById('resultado').innerHTML;
+
+    navigator.clipboard.writeText(conteudoCopia)
+        .then(() => {
+        console.log("Senha copiada...")
+    })
+        .catch(err => {
+        console.log("Erro ao copiar...", err);
+    })
+    
+}
+
 //Função utilizada para limpar a tela, caso o usuário queira.
 function limpar(){
     location.reload();
