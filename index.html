@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Gerador de senhas aleatórias</title>
+        <style type="text/css">
+            body{
+                color: black;
+                 border: 3px solid gray;
+                 width: 400px;
+                 height: 260px;  
+            }
+            h2{
+                color: black; 
+            }
+            button{
+                height: 50px;
+                width: 100px;
+                font-weight: normal ;
+            }
+            #principal{
+                /*border: 3px solid red;*/
+                width: 400px;                
+            }
+            #primeiro{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #segundo{
+                display: flex;
+                align-items: center;
+                justify-content: center; 
+            }
+            #terceiro{
+                display: flex;
+                align-items: center;
+                justify-content: center; 
+            }
+            #btngerar{
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                text-align: center;
+                text-decoration:none;
+                display: inline-block;
+                font-size: 16px ;
+                cursor: pointer;
+                font-weight: bold;
+            }
+            #btnlimpar{
+                background-color: red;
+                border: none;
+                color: white;
+                text-align: center;
+                text-decoration:none;
+                display: inline-block;
+                font-size: 16px ;
+                cursor: pointer;
+                font-weight: bold;
+            }
+            #btncopiar{
+                height: 30px;
+                width: 60px;
+                font-weight: normal;
+                text-align: center;
+                position:relative;
+                left: 15px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Gerador de Senha Aleatórias</h1>
+        <div id="principal">
+        <div id="primeiro">
+            <button id="btngerar" onclick="gerar()">Gerar Senha</button>
+        </div>
+        <div id=segundo>
+            
+            <h2 id="resultado">Senha Gerada</h2>
+            <div>
+                <button id="btncopiar" onclick="copiar()">Copiar</button>
+            </div>
+            
+        </div>
+        <div id=terceiro>
+            <button id="btnlimpar" onclick="limpar()">Limpar Senha</button>
+        </div>
+        <script src="script.js"></script>
+    </div>
+    </body>
+</html>
