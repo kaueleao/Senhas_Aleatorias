@@ -6,23 +6,23 @@
         <link href="css/estilo.css" rel="stylesheet"/>     
     </head>
     <body>
+        
         <h1>Gerador de Senha Aleatórias</h1>
         <div id="principal">
-        <div id="primeiro">
-            <button id="btngerar" onclick="gerar()">Gerar Senha</button>
-        </div>
-        <div id=segundo>
-            
-            <h2 id="resultado">Senha Gerada</h2> 
-            <div>
-                <button id="btn" onclick="copiar()">Copiar</button> <!--Ajustar este botão e layout da página-->
+            <script src="js/script.js"></script>
+            <div id="primeiro">
+                <button id="btngerar" onclick="gerar()">Gerar Senha</button>
+                <button id="btnlimpar" onclick="limpar()">Limpar Senha</button>
             </div>
-
+            
+            <div id=segundo>
+                <h2 id="resultado">Senha Gerada</h2> 
+            </div>
+        
+            <div id=terceiro>
+                <button id="btncopiar" onclick="copiar()">Copiar</button> 
+            </div>
         </div>
-        <div id=terceiro>
-            <button id="btnlimpar" onclick="limpar()">Limpar Senha</button>
-        </div>
-        <script src="js/script.js"></script>
-    </div>
+    
     </body>
 </html>
