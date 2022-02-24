@@ -66,8 +66,18 @@ button{
     font-weight: bold;
 }
 #mensagem{
-    border-color: #87c940;
-    color: #FFF;
-    background-color: #a0d468;
+    width: auto;
+    height: auto;
     text-align: center;
-   }
+    color:white;
+    background-color: green;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    from {background-color: #8ad987;}
+    to {background-color: green;}
+}

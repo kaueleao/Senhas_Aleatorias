@@ -28,9 +28,10 @@ function copiar(){
         
     })
         .catch(err => {
-        console.log("Erro ao copiar...", err);
+        console.log("Erro ao copiar a senha...", err);
+       
     })
-    
+
 }
 
 //Função utilizada para limpar a tela, caso o usuário queira.
