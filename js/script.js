@@ -25,6 +25,7 @@ function copiar(){
     navigator.clipboard.writeText(conteudoCopia)
         .then(() => {
         console.log("Senha copiada...")
+        
     })
         .catch(err => {
         console.log("Erro ao copiar...", err);
