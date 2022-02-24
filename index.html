@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8"/>
         <title>Gerador de senhas aleatórias</title>
-        <link href="css/estilo.css" rel="stylesheet"/>     
+        <link href="css/estilo.css" rel="stylesheet"/>  
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>   
     </head>
     <body>
         
@@ -22,7 +23,25 @@
             <div id=terceiro>
                 <button id="btncopiar" onclick="copiar()">Copiar</button> 
             </div>
+            
+            
         </div>
-    
+
+        <div id="mensagem" >
+            <p>  </p>
+        </div>
+            <script>
+                $('#btncopiar').on("click",msg); 
+
+                function msg(){
+                    
+                   //Função para exibir mensagem na tela usando Jquery. Falta ajustar CSS
+                   $("#mensagem").show().html("SENHA COPIADA !!!");
+                    setTimeout(function () {
+                    $("#mensagem").hide();
+                    }, 3000);
+                    
+                }
+            </script>
     </body>
 </html>

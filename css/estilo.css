@@ -2,7 +2,7 @@ body{
     color: black;
      border: 3px solid gray;
      width: 400px;
-     height: 270px;  
+     height: 320px;  
 }
 h2{
     color: black; 
@@ -65,3 +65,9 @@ button{
     cursor:pointer;
     font-weight: bold;
 }
+#mensagem{
+    border-color: #87c940;
+    color: #FFF;
+    background-color: #a0d468;
+    text-align: center;
+   }
