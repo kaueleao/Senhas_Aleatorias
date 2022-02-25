@@ -9,15 +9,14 @@ function gerar(){
         
     }
 
-    //Caso o número gerado ultrapasse a condição, ele gera um novo número.
+    //Caso o número gerado ultrapasse a condição, ele chama a função gerar() para a geração de um novo número.
     else {
         gerar();
         console.log('Reprocessou outro número'); 
     }
 }
 
-/* Função copiar a senha gerada. Usado a API Clipboard 
-Link referência usado: https://www.delftstack.com/pt/howto/javascript/javascript-copy-to-clipboard/ */
+// Função copiar a senha gerada. Usado a API Clipboard
 function copiar(){
     
     var conteudoCopia = document.getElementById('resultado').innerHTML;
@@ -34,7 +33,7 @@ function copiar(){
 
 }
 
-//Função utilizada para limpar a tela, caso o usuário queira.
+//Função utilizada para limpar os dados da tela, caso o usuário queira.
 function limpar(){
     location.reload();
 }
